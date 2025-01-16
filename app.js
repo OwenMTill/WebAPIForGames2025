@@ -29,6 +29,16 @@ app.get("/testjson", (req, res)=>
     res.sendFile(path.join(__dirname, "public", "json/games.json"));
 })
 
+app.get("/AddToList", (req, res)=>
+{
+    res.sendFile(path.join(__dirname, "public", "listadd.html"));
+})
+
+app.get("/EntriesLogin", (req, res)=>
+{
+    res.sendFile(path.join(__dirname, "public", "entrieslogin.html"));
+})
+
 setTimeout(()=>
 {
     console.log("Hello 2 seconds later");
